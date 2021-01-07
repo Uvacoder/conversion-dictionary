@@ -1,3 +1,5 @@
+const metagen = require("eleventy-plugin-metagen");
+
 module.exports = (eleventyConfig) => {
 
     // Create custom collection for markdown pages
@@ -14,6 +16,10 @@ module.exports = (eleventyConfig) => {
     // Include the folders necessary in the sites output _site
     eleventyConfig.addPassthroughCopy("css/");
     eleventyConfig.addPassthroughCopy("js/");
+    eleventyConfig.addPassthroughCopy("images/");
+
+    // Add meta generator plugin
+    eleventyConfig.addPlugin(metagen);
 
     return {
         dir: {
