@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>some conversion page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <a href="#main{{ page.url }}" class="skip-link">Skip to content</a>
+    <header>
+        <h1>{{ title }}</h1>
+    </header>
+    <nav class="top-nav">
+        <ul class="nav-list">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="https://github.com/tannerdolby">Contribute</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="main-content" id="#main{{ page.url }}">
+        {{ content | safe }}
+    </main>
+    <footer>
+        <p>&copy; {% getYear %} Tanner Dolby. Powered by <a href="https://11ty.dev">Eleventy</a> and <a href="https://netlify.com">Netlify</a></p>
+    </footer>
+
+    {% if page.url == '/conversions/moon-weight/' %}
+        <script src="/js/moon-weight.js"></script>
+    {% endif %}
+    {% if page.url == '/conversions/inches-to-meters/' %}
+        <script src="/js/inches-to-meters.js"></script>
+    {% endif %}
+    {% if page.url == '/conversions/lightning-sound/' %}
+        <script src="/js/lightning-sound.js"></script>
+    {% endif %}
+    {% if page.url == '/conversions/liters-to-gallons/' %}
+        <script src="/js/liters-to-gallons.js"></script>
+    {% endif %}
+    {% if page.url == '/conversions/prime-numbers/' %}
+        <script src="/js/find-primes.js"></script>
+    {% endif %}
+</body>
+</html>

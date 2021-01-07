@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-10rem);
+    transition: transform 300ms ease-in-out;
+    padding: .5rem;
+    background: #FFF;
+    color: #212121;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    background: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80ch;
+}
+
+header h1 {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 5.5rem;
+    line-height: 1;
+    margin-top: 1.5rem;
+    max-width: 80ch;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.top-nav {
+    max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-nav .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+}
+
+.top-nav .nav-list li {
+    /* background: #333; */
+    margin-right: 1rem;
+}
+
+.top-nav .nav-list li a {
+    color: #212121;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background: inherit;
+    border: .08rem solid lightgray;
+}
+
+.top-nav .nav-list li:hover {
+    cursor: pointer;
+}
+
+.top-nav .nav-list li:hover a {
+    text-decoration: underline;
+    border: .08rem solid transparent;
+    color: #fff;
+    background: #333;
+}
+
+main {
+    max-width: 70ch;
+    padding: 0 1rem;
+    margin: 2rem auto 4rem auto;
+    overflow-x: hidden;
+}
+
+main .conversion-list {
+    margin-top: 2rem;
+}
+
+.tag-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tag-list li {
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.conversion-list li {
+    margin: .75rem 0;
+}
+
+.conversion-list li a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.conversion-list li a:hover {
+    color: #48b34c;
+    text-decoration: underline;
+    text-decoration-color: #48b34c;
+}
+
+.moon-result,
+.im-result,
+.distance,
+.lg-result {
+    margin-top: 2rem;
+}
+
+.inch-to-meter {
+    display: flex;
+    flex-direction: column;
+}
+
+.inch-to-meter .radio,
+.gallons-to-liters .radio {
+    margin-left: .75rem;
+}
+
+.inch-to-meter .flex {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+code {
+    white-space: pre-line;
+}
+
+#calc-im,
+#calc-lg {
+    width: 5rem;
+    margin-top: 1rem;
+}
+
+#weight,
+.calc-moon,
+#input,
+#calc-im,
+#calc-lg,
+#cls,
+#time {
+    padding: .3rem;
+}
+
+.calc-moon:hover {
+    cursor: pointer;
+}
+
+#weight,
+#time {
+    margin-right: .25rem;
+    margin-left: .1rem;
+}
+
+.flex {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+footer {
+    margin-top: auto;
+    background:rgb(235, 235, 235);
+    text-align: center;
+    padding: .25rem 0;
+    width: 100%;
+}
+
+footer a {
+    color: #212121;
+}

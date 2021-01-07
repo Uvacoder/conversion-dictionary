@@ -1,0 +1,5 @@
+# Site output
+_site
+
+# Node modules
+node_modules/

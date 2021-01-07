@@ -1,0 +1,27 @@
+{
+  "name": "conversion-dictionary",
+  "version": "1.0.0",
+  "description": "A dictionary of common conversions found out in the wild.",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "eleventy-plugin-metagen": "^1.0.3"
+  },
+  "scripts": {
+    "build": "eleventy build",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "calculator",
+    "conversions"
+  ],
+  "author": {
+    "name": "Tanner Dolby",
+    "email": "tannercdolby@gmail.com",
+    "url": "https://tannerdolby.com"
+  },
+  "license": "MIT"
+}
