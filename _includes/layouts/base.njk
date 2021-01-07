@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>some conversion page</title>
+    {% metagen
+        twitterHandle="@tannerdolby",
+        name="Tanner Dolby"
+    %}
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ title}}"> 
+    <meta property="og:title" content="{{ title }}"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:description" content="{{ title }}"> 
+    <meta property="og:url" content="https://convertem.netlify.app{{ page.url }}"> 
+    <meta name="twitter:card" content="summary"> 
+    <meta name="twitter:title" content="{{ title }}"> 
+    <meta name="twitter:description" content="{{ title }}"> 
+    <link rel="canonical" href="https://convertem.netlify.app{{ page.url }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
